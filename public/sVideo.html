@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <style>
+        ::selection {
+            color: #FFF;
+        }
+
+        #white_back {  
+            margin-top: 10%;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'cwTeXYen', sans-serif;
+            height: 30px;
+        }
+
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+
+        #date{
+            width: 200px;
+            height: 35px;
+        }
+
+        #submit_btn{
+            width: 70px;
+            height: 35px;
+            font-size: 18px;
+            color: #FFF;
+            border-radius: 5px;
+            background-color: rgba(22, 41, 66);
+        }
+
+        #submit_btn:hover{
+            background-color: rgba(22,41,66,0.8);
+        }
+
+        #input_win {
+            margin: 30px auto;
+        }
+    </style>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/sVideo.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="sBoard.html"><div id="board">佈告欄</div></a>
+                <a href="sRoll.html"><div id="roll">點名</div></a>
+                <a href="sScore.html"><div id="point">成績單</div></a>
+                <a href="sVideo.html"><div id="video">補帶</div></a>
+                <a href="sMsg.html"><div id="message">聊天機器人</div></a>
+                <a href="sAns.html"><div id="practice">課後練習</div></a>
+            </div>
+            
+        </div>
+        
+        <div id="white_back">
+            <div id="input_win">
+                <input type="date" id="date">
+                <input type="submit" id="submit_btn">
+            </div> 
+            <div id="video_win"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

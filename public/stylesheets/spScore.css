@@ -1,0 +1,82 @@
+#banner {
+    margin: 100px auto 0px;
+    width: 990px;
+    background-color: rgba(22, 41, 66, 1);
+    height: 80px;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    float: left;
+}
+
+.word_style {
+    padding: 8px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box_style {
+    padding: 8px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(22, 41, 66, 0.1);
+    width: 220px;
+    height: 40px;
+}
+
+.socre_win_title {
+    background-color: rgba(22, 41, 66, 1);
+    width: 240px;
+    height: 60px;
+    margin: 10px 5px 0px;
+    float: left;
+}
+
+.socre_win_content {
+    background-color: rgba(22, 41, 66, 0.6);
+    width: 240px;
+    height: 60px;
+    margin: 10px 5px 0px;
+    float: left;
+}
+
+#socre_win {
+    width: 1000px;
+    margin: auto;
+}
+
+#text_center {
+    padding: 10px 360px;
+}
+
+.score_box {
+    width: 211.2px;
+    background-color: skyblue;
+    height: 20px;
+    margin: 6px 0px;
+}
+
+.average_box {
+    width: 180px;
+    background-color: lightblue;
+    height: 20px;
+    margin: 5px 0px;
+}
+
+.score_text {
+    margin: 0px;
+    color: white;
+    width: 100px;
+}
+
+.average_text {
+    margin: 0px;
+    color: white;
+    width: 100px;
+}

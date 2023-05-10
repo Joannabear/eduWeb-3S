@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <link rel="stylesheet" href="stylesheets/spScore.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/spScore.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="pBoard.html"><div id="board">佈告欄</div></a>
+                <a href="pRoll.html"><div id="roll">點名</div></a>
+                <a href="pScore.html"><div id="point">成績單</div></a>
+                <a href="pMsg.html"><div id="message">聊天機器人</div></a>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="banner">
+                <div id="text_center">
+                    <div id="name" class="title">小明</div>
+                    <div class="title">的成績單</div>
+                </div>
+            </div>
+            <div id="socre_win">
+                <div class="socre_win_title">
+                    <p class="word_style">日期</p>
+                </div>
+                <div class="socre_win_title">
+                    <p class="word_style">科目</p>
+                </div>
+                <div class="socre_win_title">
+                    <p class="word_style">分數</p>
+                </div>
+                <div class="socre_win_title">
+                    <p class="word_style">平均</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

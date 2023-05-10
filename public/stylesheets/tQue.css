@@ -1,0 +1,63 @@
+#white_back {
+    margin: 150px 50px 50px ;
+    font-family: 'cwTeXYen', sans-serif;
+}
+.teacher-new {
+    clear: both;
+    width: 1000px;
+    height: 400px;
+    padding: 20px;
+    margin: 25px auto;
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(22, 41, 66, 1);
+    color: slategray;
+    font-size: 30px;
+}
+.test-question{
+    margin: 30px 15px 30px 120px;
+    float: left;
+}
+.form-title{
+    font-size: 26px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.form-choose{
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.teacher-show-answer{
+    margin: 30px 120px 30px 100px;
+    float: right;
+}
+.choose-corrent{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.choose-item{
+    font-size: 24px;
+    margin: 10px 1px 10px 1px;
+}
+.choose-item:active{
+    background-color: rgba(35, 65, 104, 1);
+}
+.form-answer{
+    font-size: 20px;
+}
+.teacher-submit{
+    margin: 0% 47%;
+    width: 80px;
+}
+#teacher-check{
+    font-size: 28px;
+    border-radius: 5px;
+    margin: 0px auto 50px;
+}
+#date {
+    width: 200px;
+    height: 30px;
+    margin: 0px 40%;
+}

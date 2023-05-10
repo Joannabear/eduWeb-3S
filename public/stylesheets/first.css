@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#win {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#title {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(22, 41, 66, 1);
+    color: white;
+}
+
+#pic_3 {
+    position: absolute;
+    display: block;
+    /*    border: 1px solid black;*/
+    width: 60px;
+    height: 60px;
+}
+
+#plane3 {
+    height: 100%;
+    width: 100%;
+}
+
+#logo_title {
+    /*    border: 1px solid black;*/
+    position: absolute;
+    display: block;
+    left: 42%;
+    width: 200px;
+    height: 60px;
+}
+
+
+#h1 {
+    /*    border: 1px solid black;*/
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 16px 0px 0px 40px;
+    font-size: 24px;
+    font-family: 'cwTeXYen';
+}
+
+#pic_menu {
+    position: absolute;
+    display: block;
+    padding: 15px 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#threeLine {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+.show {
+    display: visible;
+}
+
+#menu {
+    position: absolute;
+    /*    border: 1px solid black;*/
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    background-color: rgba(22, 41, 66, 1);
+}
+
+#board {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#board:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#roll {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#roll:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#point {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#point:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#video {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#video:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#message {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#message:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#practice {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#practice:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#ID{
+    width:100%;
+    height:60%;
+    padding-top: 10%;
+}
+
+#student{
+    width: 200px;
+    height:200px;
+    display: inline-block;
+    
+    background-color: rgba(22, 41, 66, 1);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    margin-left: 20%;
+    font-size: 40px;
+}
+
+
+
+#teacher{
+    width: 200px;
+    height:200px;
+    display: inline-block;
+    
+    background-color: rgba(22, 41, 66, 1);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 40px;
+}
+
+#family{
+    width: 200px;
+    height:200px;
+    display: inline-block;
+
+    background-color: rgba(22, 41, 66, 1);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    margin-right: 15%;
+    font-size: 40px;
+}
+
+#input{
+    margin-left:30%;
+    margin-right: 30%;
+    margin-top: 70px;
+    text-align: center;
+    background-color: rgba(22, 41, 66, 0.6);
+    border-radius: 10px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+

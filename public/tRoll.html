@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+        #choose{
+            margin-top: 10%;
+        }
+        #date{
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+        }
+        #grade{
+            width: 100px;
+            height: 40px;
+            margin-left: 10%;
+            font-size: 20px;
+        }
+        #date{
+            margin-left: 15%;
+            width: 180px;
+        }
+        #subject{
+            width: 100px;
+            height: 40px;
+            font-size: 20px ;
+        }
+        #submit_btn{
+            width: 70px;
+            height: 40px;
+            font-size: 18px;
+        }
+        #all{
+            font-size: 24px;
+            margin: 2% 15%;
+            font-weight: bold;
+            color: rgba(22, 41, 66, 1);
+        }
+        #form{
+            margin-left: 15%;
+        }
+        #student_win{
+            width: 850px;
+            border: 3px solid black;
+            background-color: rgba(22, 41, 66, 1);
+            color: white;
+        }
+        .list{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .name{
+            font-size: 24px;
+            margin-left: 10%;
+        }
+        .here{
+            margin-left: 48.5%;
+        }
+        .sick{
+            margin-left: 65%;
+        }
+        #ok_btn{
+            width: 55px;
+            height: 30px;
+            margin: 4% 35%;
+        }
+    </style>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/tRoll.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+
+            $('#all_btn').click(function(){
+                if($("#all_btn").prop("checked")){
+                    $(".here").prop("checked", true);
+                } else{
+                    $(".here").prop("checked", false);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="tBoard.html"><div id="board">佈告欄</div></a>
+                <a href="tRoll.html"><div id="roll">點名</div></a>
+                <a href="tScore.html"><div id="point">成績單</div></a>
+                <a href="tVideo.html"><div id="video">補帶</div></a>
+                <a href="tQue.html"><div id="practice">課後練習</div></a>
+            </div>
+        </div>
+        <div id="choose">
+            <input type="date" id="date">
+            <select name="year" id="grade">
+                <option value="one">國一</option>
+                <option value="two">國二</option>
+                <option value="three">國三</option>
+            </select>
+            <select name="sub" id="subject">
+                <option value="國文">國文</option>
+                <option value="數學">數學</option>
+                <option value="英文">英文</option>
+            </select>
+            <input type="submit" id="submit_btn">
+        </div>
+        
+        <div id="all">
+            <input type="checkbox" name="all" value="全到" id="all_btn">
+            <label for="all">全到</label>
+        </div>
+        <div id="form">
+            <fieldset id="student_win"></fieldset>
+            <div>
+                <button id="ok_btn">送出</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

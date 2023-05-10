@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+	<script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+	<script src="javascripts/tBoard.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheets/tBoard.css">
+	<title>參S數位學習網</title>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+
+
+<body>
+    <div id="win">
+        <div id="title_bar">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="tBoard.html"><div id="board">佈告欄</div></a>
+                <a href="tRoll.html"><div id="roll">點名</div></a>
+                <a href="tScore.html"><div id="point">成績單</div></a>
+                <a href="tVideo.html"><div id="video">補帶</div></a>
+                <a href="tQue.html"><div id="practice">課後練習</div></a>
+            </div>
+        </div>
+    </div>
+    
+	<div class="container border">
+    
+		<div class="row">
+			<div class="col-sm">
+				<h1 id="text-center">Bulletin Board</h1>
+			</div>
+		</div>
+		
+		<div class="row justify-content-center">
+			<div class="col-sm-5">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">標題</span>
+					</div>
+					<input type="text" class="form-control" id="title" name="title" placeholder="標題">
+				</div>
+				
+				
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon2">內容</span>
+					</div>
+					<input type="text" class="form-control" id="msg" name="msg" placeholder="欲公告內容">
+				</div>
+				<div class="row m-3 justify-content-center">
+					<div class="col-sm-1">
+						<input type="button" class="btn btn-outline-primary" value="確認" id="myButton">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+	    <div id="content"></div>
+	</div>
+	
+	
+</body>
+</html>

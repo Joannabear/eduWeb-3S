@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <link rel="stylesheet" href="stylesheets/tQue.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/tQue.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="tBoard.html"><div id="board">佈告欄</div></a>
+                <a href="tRoll.html"><div id="roll">點名</div></a>
+                <a href="tScore.html"><div id="point">成績單</div></a>
+                <a href="tVideo.html"><div id="video">補帶</div></a>
+                <a href="tQue.html"><div id="practice">課後練習</div></a>
+            </div>
+        </div>
+        
+        <!-- ●●●新增內容從此開始●●● -->
+        <div id="white_back">
+            <input type="date" id="date">
+            <!-- ●●● 第一題 ●●● -->
+            <div class="teacher-new" id="teacher-new0">
+                <!-- ●●● 第一題-問題 ●●● -->
+                <div class ="test-question">
+                    <div class="question-text">
+                        <span class="question">Q1:</span>
+                        <input type="text" class="form-title" id="question-title0" name="title" placeholder="">
+                    </div>
+                    <br>
+                    <div>
+                        <span class="a">A:</span>
+                        <input type="text" class="form-choose" id="title-chooseA0" name="chooseA" placeholder="">
+                    </div>
+                    <div>
+                        <span class="b">B:</span>
+                        <input type="text" class="form-choose" id="title-chooseB0" name="chooseB" placeholder="">
+                    </div>
+                    <div>
+                        <span class="c">C:</span>
+                        <input type="text" class="form-choose" id="title-chooseC0" name="chooseC" placeholder="">
+                    </div>
+                    <div>
+                        <span class="d">D:</span>
+                        <input type="text" class="form-choose" id="title-chooseD0" name="chooseD" placeholder="">
+                    </div>
+                </div>
+                <!-- ●●● 第一題-答案 ●●● -->
+                <div class="teacher-show-answer">
+                    <div class="answer-top">
+                        <span class="teacher-corrent">答案:</span>
+                        <div class="choose-corrent">
+                            <input type="text" class="form-answer" id="choose-item0" name="choose" placeholder="">
+                        </div>
+                    </div>
+                    <!-- ●●● 第一題-詳解 ●●● -->
+                    <div class="answer-button">
+                        <span class="teacher-know">詳解:</span>
+                        <div>
+                            <input type="text" class="form-answer" id="teacher-tell0" name="tell" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           /* <!-- ●●● 第二題 ●●● -->
+            <div class="teacher-new" id="teacher-new1">
+                <!-- ●●● 第二題-問題 ●●● -->
+                <div class ="test-question">
+                    <div class="question-text">
+                        <span class="question">Q2:</span>
+                        <input type="text" class="form-title" id="question-title1" name="title" placeholder="">
+                    </div>
+                    <br>
+                    <div>
+                        <span class="a">A:</span>
+                        <input type="text" class="form-choose" id="title-chooseA1" name="chooseA" placeholder="">
+                    </div>
+                    <div>
+                        <span class="b">B:</span>
+                        <input type="text" class="form-choose" id="title-chooseB1" name="chooseB" placeholder="">
+                    </div>
+                    <div>
+                        <span class="c">C:</span>
+                        <input type="text" class="form-choose" id="title-chooseC1" name="chooseC" placeholder="">
+                    </div>
+                    <div>
+                        <span class="d">D:</span>
+                        <input type="text" class="form-choose" id="title-chooseD1" name="chooseD" placeholder="">
+                    </div>
+                </div>
+                <!-- ●●● 第二題-答案 ●●● -->
+                <div class="teacher-show-answer">
+                    <div class="answer-top">
+                        <span class="teacher-corrent">答案:</span>
+                        <div class="choose-corrent">
+                            <input type="text" class="form-answer" id="choose-item1" name="choose" placeholder="">
+                        </div>
+                    </div>
+                    <!-- ●●● 第二題-詳解 ●●● -->
+                    <div class="answer-button">
+                        <span class="teacher-know">詳解:</span>
+                        <div>
+                            <input type="text" class="form-answer" id="teacher-tell1" name="tell" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ●●● 第三題 ●●● -->
+            <div class="teacher-new" id="teacher-new2">
+                <!-- ●●● 第三題-問題 ●●● -->
+                <div class ="test-question">
+                    <div class="question-text">
+                        <span class="question">Q3:</span>
+                        <input type="text" class="form-title" id="question-title2" name="title" placeholder="">
+                    </div>
+                    <br>
+                    <div>
+                        <span class="a">A:</span>
+                        <input type="text" class="form-choose" id="title-chooseA2" name="chooseA" placeholder="">
+                    </div>
+                    <div>
+                        <span class="b">B:</span>
+                        <input type="text" class="form-choose" id="title-chooseB2" name="chooseB" placeholder="">
+                    </div>
+                    <div>
+                        <span class="c">C:</span>
+                        <input type="text" class="form-choose" id="title-chooseC2" name="chooseC" placeholder="">
+                    </div>
+                    <div>
+                        <span class="d">D:</span>
+                        <input type="text" class="form-choose" id="title-chooseD2" name="chooseD" placeholder="">
+                    </div>
+                </div>
+                <!-- ●●● 第三題-答案 ●●● -->
+                <div class="teacher-show-answer">
+                    <div class="answer-top">
+                        <span class="teacher-corrent">答案:</span>
+                        <div class="choose-corrent">
+                            <input type="text" class="form-answer" id="choose-item2" name="choose" placeholder="">
+                        </div>
+                    </div>
+                    <!-- ●●● 第三題-詳解 ●●● -->
+                    <div class="answer-button">
+                        <span class="teacher-know">詳解:</span>
+                        <div>
+                            <input type="text" class="form-answer" id="teacher-tell2" name="tell" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ●●● 第四題 ●●● -->
+            <div class="teacher-new" id="teacher-new3">
+                <!-- ●●● 第四題-問題 ●●● -->
+                <div class ="test-question">
+                    <div class="question-text">
+                        <span class="question">Q4:</span>
+                        <input type="text" class="form-title" id="question-title3" name="title" placeholder="">
+                    </div>
+                    <br>
+                    <div>
+                        <span class="a">A:</span>
+                        <input type="text" class="form-choose" id="title-chooseA3" name="chooseA" placeholder="">
+                    </div>
+                    <div>
+                        <span class="b">B:</span>
+                        <input type="text" class="form-choose" id="title-chooseB3" name="chooseB" placeholder="">
+                    </div>
+                    <div>
+                        <span class="c">C:</span>
+                        <input type="text" class="form-choose" id="title-chooseC3" name="chooseC" placeholder="">
+                    </div>
+                    <div>
+                        <span class="d">D:</span>
+                        <input type="text" class="form-choose" id="title-chooseD3" name="chooseD" placeholder="">
+                    </div>
+                </div>
+                <!-- ●●● 第四題-答案 ●●● -->
+                <div class="teacher-show-answer">
+                    <div class="answer-top">
+                        <span class="teacher-corrent">答案:</span>
+                        <div class="choose-corrent">
+                            <input type="text" class="form-answer" id="choose-item3" name="choose" placeholder="">
+                        </div>
+                    </div>
+                    <!-- ●●● 第四題-詳解 ●●● -->
+                    <div class="answer-button">
+                        <span class="teacher-know">詳解:</span>
+                        <div>
+                            <input type="text" class="form-answer" id="teacher-tell3" name="tell" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ●●● 第五題 ●●● -->
+            <div class="teacher-new" id="teacher-new4">
+                <!-- ●●● 第五題-問題 ●●● -->
+                <div class ="test-question">
+                    <div class="question-text">
+                        <span class="question">Q5:</span>
+                        <input type="text" class="form-title" id="question-title4" name="title" placeholder="">
+                    </div>
+                    <br>
+                    <div>
+                        <span class="a">A:</span>
+                        <input type="text" class="form-choose" id="title-chooseA4" name="chooseA" placeholder="">
+                    </div>
+                    <div>
+                        <span class="b">B:</span>
+                        <input type="text" class="form-choose" id="title-chooseB4" name="chooseB" placeholder="">
+                    </div>
+                    <div>
+                        <span class="c">C:</span>
+                        <input type="text" class="form-choose" id="title-chooseC4" name="chooseC" placeholder="">
+                    </div>
+                    <div>
+                        <span class="d">D:</span>
+                        <input type="text" class="form-choose" id="title-chooseD4" name="chooseD" placeholder="">
+                    </div>
+                </div>
+                <!-- ●●● 第五題-答案 ●●● -->
+                <div class="teacher-show-answer">
+                    <div class="answer-top">
+                        <span class="teacher-corrent">答案:</span>
+                        <div class="choose-corrent">
+                            <input type="text" class="form-answer" id="choose-item4" name="choose" placeholder="">
+                        </div>
+                    </div>
+                    <!-- ●●● 第五題-詳解 ●●● -->
+                    <div class="answer-button">
+                        <span class="teacher-know">詳解:</span>
+                        <div>
+                            <input type="text" class="form-answer" id="teacher-tell4" name="tell" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!-- ●●● 送出按鈕 ●●● -->
+        <div class="teacher-submit">
+            <button id="teacher-check">送出</button>
+        </div>
+        <!-- ●●●新增內容就此結束●●● -->
+</body>
+
+</html>

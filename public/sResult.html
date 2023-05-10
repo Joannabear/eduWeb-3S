@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <link rel="stylesheet" href="stylesheets/sResult.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+        #white_back {
+           /* background-color: rgba(179, 217, 243, 0.6);*/
+            margin: 10%;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'cwTeXYen', sans-serif;
+        }
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+
+    </style>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/sResult.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="sBoard.html"><div id="board">佈告欄</div></a>
+                <a href="sRoll.html"><div id="roll">點名</div></a>
+                <a href="sScore.html"><div id="point">成績單</div></a>
+                <a href="sVideo.html"><div id="video">補帶</div></a>
+                <a href="sMsg.html"><div id="message">聊天機器人</div></a>
+                <a href="sAns.html"><div id="practice">課後練習</div></a>
+            </div>
+        </div>
+        <!-- ●●● 新增內容就此開始 ●●● -->
+        <div id="white_back">
+             <!-- ●●● 第一題 ●●● -->
+            <div class="result-new">
+                <diV >
+                    <h1 id="title-name0">第一題</h1>
+                </div>
+                <div class="show-result">
+                    <diV class="answer">
+                        <span class="teacher-corrent">答案: </span>
+                        <input type="text" class="corrent" id="teacher-corrent0" readonly>
+                    </div>
+                    <div class="knowledge">
+                        <span class="teacher-know">詳解: </span>
+                        <input type="text" class="know" id="teacher-know0" readonly>
+                    </div>
+                </diV>
+            </div> 
+            <!-- ●●● 第二題 ●●● -->
+            <div class="result-new">
+                <diV >
+                    <h1 id="title-name1">第二題</h1>
+                </div>
+                <div class="show-result">
+                    <diV class="answer">
+                        <span class="teacher-corrent">答案: </span>
+                        <input type="text" class="corrent" id="teacher-corrent1" readonly>
+                    </div>
+                    <div class="knowledge">
+                        <span class="teacher-know">詳解: </span>
+                        <input type="text" class="know" id="teacher-know1" readonly>
+                    </div>
+                </diV>
+            </div> 
+            <!-- ●●● 第三題 ●●● -->
+            <div class="result-new">
+                <diV >
+                    <h1 id="title-name2">第三題</h1>
+                </div>
+                <div class="show-result">
+                    <diV class="answer">
+                        <span class="teacher-corrent">答案: </span>
+                        <input type="text" class="corrent" id="teacher-corrent2" readonly>
+                    </div>
+                    <div class="knowledge">
+                        <span class="teacher-know">詳解: </span>
+                        <input type="text" class="know" id="teacher-know2" readonly>
+                    </div>
+                </diV>
+            </div> 
+            <!-- ●●● 第四題 ●●● -->
+            <div class="result-new">
+                <diV >
+                    <h1 id="title-name3">第四題</h1>
+                </div>
+                <div class="show-result">
+                    <diV class="answer">
+                        <span class="teacher-corrent">答案: </span>
+                        <input type="text" class="corrent" id="teacher-corrent3" readonly>
+                    </div>
+                    <div class="knowledge">
+                        <span class="teacher-know">詳解: </span>
+                        <input type="text" class="know" id="teacher-know3" readonly>
+                    </div>
+                </diV>
+            </div> 
+            <!-- ●●● 第五題 ●●● -->
+            <div class="result-new">
+                <diV >
+                    <h1 id="title-name4">第五題</h1>
+                </div>
+                <div class="show-result">
+                    <diV class="answer">
+                        <span class="teacher-corrent">答案: </span>
+                        <input type="text" class="corrent" id="teacher-corrent4" readonly>
+                    </div>
+                    <div class="knowledge">
+                        <span class="teacher-know">詳解: </span>
+                        <input type="text" class="know" id="teacher-know4" readonly>
+                    </div>
+                </diV>
+            </div> 
+           
+            <!-- ●●● 答對率 ●●● -->
+            <div class="goal">
+                <span>答對率: </span><span id="goal"></span>
+            </div>
+        </div>
+        <!-- ●●● 新增內容就此結束 ●●● -->
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/first.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+        #white_back {
+            background-color: rgba(179, 217, 243, 0.6);
+            margin: 10%;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'cwTeXYen', sans-serif;
+        }
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+
+    </style>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/first.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+        </div>
+        
+        <div id="ID">
+            <input type="button" value="學生" id="student">
+            <input type="button" value="老師" id="teacher">
+            <input type="button" value="家長" id="family">
+            
+            <div id="input">
+                帳號: <INPUT TYPE="text" NAME="account" id="account"></INPUT>
+                <BR></BR>
+                密碼: <INPUT TYPE="text" NAME="password" id="password"></INPUT>
+                <BR></BR>
+                <INPUT id="submit_btn" TYPE="submit" value="登入"></INPUT>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+#white_back {
+    color:rgb(127, 135, 143);
+    margin: 10%;
+    padding-bottom: 50px;
+}
+.result-new {
+    margin: 0px 10px 20px;
+    border-radius: 50px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+#title-name {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+.show-result {
+    background-color: rgba(22, 41, 66, 1);
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 24px;
+}
+.answer{
+    margin: 10px;
+}
+.knowledge{
+    margin: 10px;
+}
+.goal{
+    margin: 10px;
+    text-align: center;
+    color: red;
+    font-weight:bold;
+    font-size:24px;
+}
+.experience {
+    background-color: rgba(22, 41, 66, 1);
+    width: 800px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.zero{
+    font-size:24px;
+    background-color: rgb(228, 205, 76);
+    float:right;
+    border-radius: 15px;
+    color: rgb(78, 77, 77);
+    margin-top: 10px;
+}
+
+.corrent {
+    width: 680px;
+    height: 30px;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.know {
+    width: 680px;
+    height: 170px;
+    font-size: 30px;
+    padding: 15px;
+}

@@ -1,0 +1,55 @@
+.student-test {
+    clear: both;
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+    margin: 25px auto;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(22, 41, 66, 1);
+    color: slategray;
+    font-size: 30px;
+}
+.student-title{
+    margin: 20px;
+    font-size: 35px;
+    padding: 10px;
+}
+.form-question{
+    font-size: 35px;
+}
+.form-answer{
+    margin: 10px 25px 15px 5px;
+}
+.form-answer{
+    font-size: 30px;
+}
+#submit_btn {
+    font-size: 28px;
+    border-radius: 5px;
+    margin: 0px auto 50px;
+}
+.submit {
+    margin: 0% 47%;
+    width: 80px;
+}
+
+.ans {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.answer {
+    width: 100px;
+}
+
+#date {
+    height: 30px;
+    width: 200px;
+}
+
+#check_btn {
+    height: 30px;
+}

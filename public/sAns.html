@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+    <link rel="stylesheet" href="stylesheets/sAns.css">
+    <style>
+        ::selection {
+            background: #6363FF;
+            color: #FFF;
+        }
+
+        #white_back {
+            margin: 10%;
+            margin-bottom: 0px;
+            text-align: center;
+            font-family: 'cwTeXYen', sans-serif;
+        }
+
+        #plane_corner{
+            position: absolute;
+            left: 10px;
+            bottom: -60px;
+        }
+
+    </style>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery-ui.min.js"></script>
+    <script src="javascripts/sAns.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="images/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="images/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <a href="sBoard.html"><div id="board">佈告欄</div></a>
+                <a href="sRoll.html"><div id="roll">點名</div></a>
+                <a href="sScore.html"><div id="point">成績單</div></a>
+                <a href="sVideo.html"><div id="video">補帶</div></a>
+                <a href="sMsg.html"><div id="message">聊天機器人</div></a>
+                <a href="sAns.html"><div id="practice">課後練習</div></a>
+            </div>
+        </div>
+        <!-- ●●●新增內容從此開始●●● -->
+        <div id="white_back">
+            <input type="date" id="date">
+            <input type="submit" value="查看" id="check_btn"> 
+            <!-- ●●● 第一題 ●●● -->
+            <div class ="student-test">
+                <div class="student-title">
+                    <span class="first-title">Q1:</span>
+                    <input type="text" class="form-question" id="title-question0" name="question" placeholder="Question" readonly>
+                </div>
+                
+                <div class="student-choose">
+                    <div>
+                        <span class="choose-a">A:</span>
+                        <input type="text" class="form-answer" id="title-answerA0" name="answerA" placeholder="選項A" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-b">B:</span>
+                        <input type="text" class="form-answer" id="title-answerB0" name="answerB" placeholder="選項B" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-c">C:</span>
+                        <input type="text" class="form-answer" id="title-answerC0" name="answerC" placeholder="選項C" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-d">D:</span>
+                        <input type="text" class="form-answer" id="title-answerD0" name="answerD" placeholder="選項D" readonly>
+                    </div>
+                </div>
+
+                <div class="ans">
+                    <span class="first-title">答：</span>
+                    <input type="text" class="form-answer answer" id="answer0" name="answer">
+                </div>
+            </div>
+            <!-- ●●● 第二題 ●●● -->
+            <div class ="student-test" >
+                <div class="student-title">
+                    <span class="first-title">Q2:</span>
+                    <input type="text" class="form-question" id="title-question1" name="question" placeholder="Question" readonly>
+                </div>
+                
+                <div class="student-choose">
+                    <div>
+                        <span class="choose-a">A:</span>
+                        <input type="text" class="form-answer" id="title-answerA1" name="answerA" placeholder="選項A" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-b">B:</span>
+                        <input type="text" class="form-answer" id="title-answerB1" name="answerB" placeholder="選項B" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-c">C:</span>
+                        <input type="text" class="form-answer" id="title-answerC1" name="answerC" placeholder="選項C" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-d">D:</span>
+                        <input type="text" class="form-answer" id="title-answerD1" name="answerD" placeholder="選項D" readonly>
+                    </div>
+                </div>
+
+                <div class="ans">
+                    <span class="first-title">答：</span>
+                    <input type="text" class="form-answer answer" id="answer1" name="answer">
+                </div>
+            </div>
+            <!-- ●●● 第三題 ●●● -->
+            <div class ="student-test" >
+                <div class="student-title">
+                    <span class="first-title">Q3:</span>
+                    <input type="text" class="form-question" id="title-question2" name="question" placeholder="Question" readonly>
+                </div>
+                
+                <div class="student-choose">
+                    <div>
+                        <span class="choose-a">A:</span>
+                        <input type="text" class="form-answer" id="title-answerA2" name="answerA" placeholder="選項A" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-b">B:</span>
+                        <input type="text" class="form-answer" id="title-answerB2" name="answerB" placeholder="選項B" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-c">C:</span>
+                        <input type="text" class="form-answer" id="title-answerC2" name="answerC" placeholder="選項C" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-d">D:</span>
+                        <input type="text" class="form-answer" id="title-answerD2" name="answerD" placeholder="選項D" readonly>
+                    </div>
+                </div>
+
+                <div class="ans">
+                    <span class="first-title">答：</span>
+                    <input type="text" class="form-answer answer" id="answer2" name="answer">
+                </div>
+            </div>
+            <!-- ●●● 第四題 ●●● -->
+            <div class ="student-test" >
+                <div class="student-title">
+                    <span class="first-title">Q4:</span>
+                    <input type="text" class="form-question" id="title-question3" name="question" placeholder="Question" readonly>
+                </div>
+                
+                <div class="student-choose">
+                    <div>
+                        <span class="choose-a">A:</span>
+                        <input type="text" class="form-answer" id="title-answerA3" name="answerA" placeholder="選項A" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-b">B:</span>
+                        <input type="text" class="form-answer" id="title-answerB3" name="answerB" placeholder="選項B" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-c">C:</span>
+                        <input type="text" class="form-answer" id="title-answerC3" name="answerC" placeholder="選項C" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-d">D:</span>
+                        <input type="text" class="form-answer" id="title-answerD3" name="answerD" placeholder="選項D" readonly>
+                    </div>
+                </div>
+
+                <div class="ans">
+                    <span class="first-title">答：</span>
+                    <input type="text" class="form-answer answer" id="answer3" name="answer">
+                </div>
+            </div>
+            <!-- ●●● 第五題 ●●● -->
+            <div class ="student-test" >
+                <div class="student-title">
+                    <span class="first-title">Q5:</span>
+                    <input type="text" class="form-question" id="title-question4" name="question" placeholder="Question" readonly>
+                </div>
+                
+                <div class="student-choose">
+                    <div>
+                        <span class="choose-a">A:</span>
+                        <input type="text" class="form-answer" id="title-answerA4" name="answerA" placeholder="選項A" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-b">B:</span>
+                        <input type="text" class="form-answer" id="title-answerB4" name="answerB" placeholder="選項B" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-c">C:</span>
+                        <input type="text" class="form-answer" id="title-answerC4" name="answerC" placeholder="選項C" readonly>
+                    </div>
+                    <div>
+                        <span class="choose-d">D:</span>
+                        <input type="text" class="form-answer" id="title-answerD4" name="answerD" placeholder="選項D" readonlys>
+                    </div>
+                </div>
+
+                <div class="ans">
+                    <span class="first-title">答：</span>
+                    <input type="text" class="form-answer answer" id="answer4" name="answer">
+                </div>
+            </div>
+        </div>
+
+        <!-- ●●● 提交按鈕 ●●● -->
+        <div class="submit">
+            <button id="submit_btn">提交</button>
+        </div>
+        <!-- ●●●新增內容就此結束●●● -->
+</body>
+
+</html>

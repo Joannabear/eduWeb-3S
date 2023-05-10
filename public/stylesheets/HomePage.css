@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#win {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#title {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(22, 41, 66, 1);
+    color: white;
+}
+
+#pic_3 {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+#plane3 {
+    height: 100%;
+    width: 100%;
+}
+
+#logo_title {
+    position: absolute;
+    display: block;
+    left: 42%;
+    width: 200px;
+    height: 60px;
+}
+
+#h1 {
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 16px 0px 0px 40px;
+    font-size: 24px;
+    font-family: 'cwTeXYen';
+}
+
+#pic_menu {
+    position: absolute;
+    display: block;
+    padding: 15px 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#threeLine {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    background-color: rgba(22, 41, 66, 1);
+}
+
+#board {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#board:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#roll {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#roll:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#point {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#point:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#video {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#video:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#message {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#message:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
+
+#practice {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'cwTeXYen';
+    height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#practice:hover {
+    background-color: rgba(150, 100, 159, 0.9);
+    text-decoration: none;
+    color: white;
+}
